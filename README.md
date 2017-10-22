@@ -1,5 +1,5 @@
 # hackerrank
-collections of codes from hackerrank website
+collections of codes from hackerrank.com
 
 Day 0: Mean, Median, and Mode
 Day 0: Weighted Mean
