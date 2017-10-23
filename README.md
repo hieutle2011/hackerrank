@@ -40,6 +40,10 @@ Day 6: The Central Limit Theorem II
 
 Day 6: The Central Limit Theorem III
 
+Day 7: Pearson Correlation Coefficient I
+
+Day 7: Spearman's Rank Correlation Coefficient
+
 
 https://en.wikibooks.org/wiki/LaTeX/Mathematics
 
@@ -47,12 +51,10 @@ https://medium.com/pymi/bi%E1%BB%83u-di%E1%BB%85n-c%C3%B4ng-th%E1%BB%A9c-to%C3%A
 
 
 def phi(x):
-
     'Cumulative distribution function for the standard normal distribution'
-
     return (1.0 + erf(x / sqrt(2.0))) / 2.0
 
-# https://docs.python.org/3.5/library/math.html#math.erf
+https://docs.python.org/3.5/library/math.html#math.erf
 
 
 
