@@ -44,6 +44,10 @@ Day 7: Pearson Correlation Coefficient I
 
 Day 7: Spearman's Rank Correlation Coefficient
 
+Day 8: Least Square Regression Line
+
+
+
 
 https://en.wikibooks.org/wiki/LaTeX/Mathematics
 
