@@ -1,0 +1,29 @@
+
+number = [int(i) for i in input().split()]
+X = []
+Y = []
+data = []
+for i in range(number[1]):
+    data.append(([float(i) for i in input().split()]))
+
+for i in data:
+    X.append((i[0], i[1]))
+    Y.append(i[2])
+ # find the value a, b1, b2, ....
+
+from sklearn import linear_model
+
+lm = linear_model.LinearRegression()
+lm.fit(X, Y)
+a = lm.intercept_
+b = lm.coef_
+
+# q denotes the number of feature sets (f1, f2)
+q = int(input())
+# value of feature sets
+f = []
+for i in range(q):
+    f.append([float(i) for i in input().split()])
+for i in range(len(f)):
+    y = f[i][0] * b[0] + f[i][1] *b[1] + a
+    print(round(y, 2))
