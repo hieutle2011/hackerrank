@@ -1,6 +1,6 @@
 # hackerrank
 
-collections of codes from hackerrank.com
+Collections of codes from hackerrank.com
 
 Day 0: Mean, Median, and Mode
 
@@ -46,19 +46,18 @@ Day 7: Spearman's Rank Correlation Coefficient
 
 Day 8: Least Square Regression Line
 
+Day 8: Pearson Correlation Coefficient II
+
+Day 9: Multiple Linear Regression
 
 
+Side notes:
 
 https://en.wikibooks.org/wiki/LaTeX/Mathematics
 
 https://medium.com/pymi/bi%E1%BB%83u-di%E1%BB%85n-c%C3%B4ng-th%E1%BB%A9c-to%C3%A1n-trong-latex-tr%C3%AAn-jupyter-notebook-5e1f521f062c
 
-
-def phi(x):
-    'Cumulative distribution function for the standard normal distribution'
-    return (1.0 + erf(x / sqrt(2.0))) / 2.0
+https://docs.python.org/3/library/math.html?highlight=math%20erf#math.erf
 
 https://docs.python.org/3.5/library/math.html#math.erf
-
-
 
