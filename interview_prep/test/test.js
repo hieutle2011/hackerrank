@@ -1,5 +1,8 @@
 var assert = require('assert');
-const sockMerchant = require('../sock-merchant')
+const sockMerchant = require('../sock-merchant');
+const countingValleys = require('../counting-valleys');
+
+
 describe('Sock Merchant', function () {
   it('should return 3 for Sample test case 0', function () {
     const line_1 = '9';
@@ -21,5 +24,20 @@ describe('Sock Merchant', function () {
     const n = parseInt(line_1, 10);
     const ar = line_2.split(' ').map(arTemp => parseInt(arTemp, 10));
     assert.equal(sockMerchant(n, ar), 6);
+  });
+});
+
+describe('Counting Valleys', function () {
+  it('should return 1 for Sample test case 0', function () {
+    const line_1 = '8';
+    const ar = "UDDDUDUU";
+    const n = parseInt(line_1, 10);
+    assert.equal(countingValleys(n, ar), 1);
+  });
+  it('should return 2 for Sample test case 1', function () {
+    const line_1 = '12';
+    const ar = "DDUUDDUDUUUD";
+    const n = parseInt(line_1, 10);
+    assert.equal(countingValleys(n, ar), 2);
   });
 });
