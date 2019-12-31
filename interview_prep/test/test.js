@@ -1,6 +1,7 @@
 var assert = require('assert');
 const sockMerchant = require('../sock-merchant');
 const countingValleys = require('../counting-valleys');
+const repeatedString = require('../repeated-string');
 
 
 describe('Sock Merchant', function () {
@@ -39,5 +40,50 @@ describe('Counting Valleys', function () {
     const ar = "DDUUDDUDUUUD";
     const n = parseInt(line_1, 10);
     assert.equal(countingValleys(n, ar), 2);
+  });
+});
+
+describe('Repeated String', function () {
+  it('should return 7 for Sample test case 0', function () {
+    const s = 'aba';
+    const line_2 = "10";
+    const n = parseInt(line_2, 10);
+    assert.equal(repeatedString(s, n), 7);
+  });
+  it('should return 1000000000000 for Sample test case 1', function () {
+    const s = 'a';
+    const line_2 = "1000000000000";
+    const n = parseInt(line_2, 10);
+    assert.equal(repeatedString(s, n), 1000000000000);
+  });
+  it('should return 588525 for Test case 2', function () {
+    const s = 'aab';
+    const line_2 = "882787";
+    const n = parseInt(line_2, 10);
+    assert.equal(repeatedString(s, n), 588525);
+  });
+  it('should return 0 for Test case 3', function () {
+    const s = 'ceebbcb';
+    const line_2 = "817723";
+    const n = parseInt(line_2, 10);
+    assert.equal(repeatedString(s, n), 0);
+  });
+  it('should return 164280 for Test case 4', function () {
+    const s = 'gfcaaaecbg';
+    const line_2 = "547602";
+    const n = parseInt(line_2, 10);
+    assert.equal(repeatedString(s, n), 164280);
+  });
+  it('should return 0 for Test case 5', function () {
+    const s = 'x';
+    const line_2 = "970770";
+    const n = parseInt(line_2, 10);
+    assert.equal(repeatedString(s, n), 0);
+  });
+  it('should return 51574523448 for Test case 7', function () {
+    const s = 'kmretasscityylpdhuwjirnqimlkcgxubxmsxpypgzxtenweirknjtasxtvxemtwxuarabssvqdnktqadhyktagjxoanknhgilnm';
+    const line_2 = "736778906400";
+    const n = parseInt(line_2, 10);
+    assert.equal(repeatedString(s, n), 51574523448);
   });
 });
