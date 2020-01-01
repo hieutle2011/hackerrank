@@ -2,6 +2,7 @@ var assert = require('assert');
 const sockMerchant = require('../sock-merchant');
 const countingValleys = require('../counting-valleys');
 const repeatedString = require('../repeated-string');
+const jumpingOnClouds = require('../jumping-on-clouds');
 
 
 describe('Sock Merchant', function () {
@@ -86,4 +87,18 @@ describe('Repeated String', function () {
     const n = parseInt(line_2, 10);
     assert.equal(repeatedString(s, n), 51574523448);
   });
+});
+
+describe('Jumping on the Clouds', function () {
+  it('should return 4 for Sample test case 0', function () {
+    const line_2 = "0 0 1 0 0 1 0";
+    const c = line_2.split(' ').map(arTemp => parseInt(arTemp, 10));
+    assert.equal(jumpingOnClouds(c), 4);
+  });
+  it('should return 3 for Sample test case 1', function () {
+    const line_2 = "0 0 0 0 1 0";
+    const c = line_2.split(' ').map(arTemp => parseInt(arTemp, 10));
+    assert.equal(jumpingOnClouds(c), 3);
+  });
+
 });
